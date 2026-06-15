@@ -4,6 +4,7 @@ import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
+import static dict.Elements.CREATE_PROJECT;
 
 public class ProjectPage {
 
@@ -24,7 +25,7 @@ public class ProjectPage {
 
     @Step("Создать проект")
     public ProjectsPage clickCreateProject() {
-        $(byText("Create project")).click();
+        $(byText(CREATE_PROJECT)).click();
         return new ProjectsPage();
     }
 }

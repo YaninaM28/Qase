@@ -8,8 +8,6 @@ import static io.restassured.RestAssured.given;
 
 public class CaseAdapter {
 
-//    static Gson gson = new Gson();
-
     public static CaseRs createCase(String projectCode, CaseRq rq) {
         return given()
                 .spec(spec)

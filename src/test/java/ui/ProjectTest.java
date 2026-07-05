@@ -1,4 +1,4 @@
-package tests;
+package ui;
 
 import io.qameta.allure.Description;
 import org.testng.annotations.Test;
@@ -8,7 +8,7 @@ import static utils.PropertyReader.getProperty;
 public class ProjectTest extends BaseTest {
 
     private static String projectName = "TMS01";
-    private static String projectCode = "TMS001";
+    public static String projectCode = "TMS001";
 
     @Test(description = "Проверка создания нового проекта")
     @Description("Авторизоваться в Qase и создать новый проект")
